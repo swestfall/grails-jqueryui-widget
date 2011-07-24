@@ -1,12 +1,12 @@
 package grails.jqueryui.widget
 
-class AutoCompleteTagLib {
+class DatePickerTagLib {
 
     static namespace = "jqueryui"
 
     GrailsJQueryUIWidgetUtil util = GrailsJQueryUIWidgetUtil.getInstance();
 
-    def jquiAutoComplete = {attrs, body ->
+    def jquiDatePicker = { attrs, body ->
 
         //pull the config properties and set defaults
         def id = attrs.remove('id')
@@ -15,11 +15,11 @@ class AutoCompleteTagLib {
         def config = attrs.remove('config') ?: [:]
 
         //set ids
-        def autoCompleteID = "${namespace}.grailsYuiAutoComplete_${id}"
+        def datePickerID = "${namespace}.grailsYuiDatePicker_${id}"
 
         //build the markup
         def markup = ""
-        if (renderMarkup == true){
+        if (renderMarkup == true) {
             markup = "<input id='${id}' type='text' autocomplete='off' />"
         }
 
@@ -28,12 +28,12 @@ class AutoCompleteTagLib {
 ${markup}
 <script type="text/javascript">
     \$(function() {
-        ${autoCompleteID} = \$("#${id}").autocomplete(${util.toJSON(config)});
+        ${datePickerID} = \$("#${id}").datepicker(${util.toJSON(config)});
     });
 
 </script>
         """
 
     }
-
 }
+
