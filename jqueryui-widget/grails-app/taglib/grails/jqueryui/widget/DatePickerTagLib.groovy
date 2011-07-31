@@ -15,7 +15,7 @@ class DatePickerTagLib {
         def config = attrs.remove('config') ?: [:]
 
         //set ids
-        def datePickerID = "${namespace}.grailsYuiDatePicker_${id}"
+        def datePickerID = "${namespace}.grailsJQUIDatePicker_${id}"
 
         //build the markup
         def markup = ""

@@ -15,7 +15,7 @@ class AutoCompleteTagLib {
         def config = attrs.remove('config') ?: [:]
 
         //set ids
-        def autoCompleteID = "${namespace}.grailsYuiAutoComplete_${id}"
+        def autoCompleteID = "${namespace}.grailsJQUIAutoComplete_${id}"
 
         //build the markup
         def markup = ""
