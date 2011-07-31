@@ -1,5 +1,7 @@
 package grails.jqueryui.widget
 
+import org.codehaus.groovy.grails.commons.ConfigurationHolder
+
 class DatePickerTagLib {
 
     static namespace = "jqueryui"
@@ -8,14 +10,16 @@ class DatePickerTagLib {
 
     def jquiDatePicker = { attrs, body ->
 
+        String prefix = ConfigurationHolder.config.grails.jqueryui.prefixes.datePicker
+        String jsNameSpace = ConfigurationHolder.config.grails.jqueryui.namespace
+
         //pull the config properties and set defaults
         def id = attrs.remove('id')
         def renderMarkup = attrs.remove('renderMarkup') ?: true
-        def namespace = attrs.remove('namespace') ?: 'grails.jqueryui.components'
         def config = attrs.remove('config') ?: [:]
 
         //set ids
-        def datePickerID = "${namespace}.grailsJQUIDatePicker_${id}"
+        def datePickerID = "${jsNameSpace}.${prefix}${id}"
 
         //build the markup
         def markup = ""

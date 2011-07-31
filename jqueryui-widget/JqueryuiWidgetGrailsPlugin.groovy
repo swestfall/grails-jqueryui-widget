@@ -1,3 +1,6 @@
+import grails.util.Environment
+import org.codehaus.groovy.grails.commons.GrailsApplication
+
 class JqueryuiWidgetGrailsPlugin {
     // the plugin version
     def version = "0.1"
@@ -26,8 +29,32 @@ Brief description of the plugin.
     }
 
     def doWithSpring = {
-        // TODO Implement runtime spring config (optional)
+        mergeConfig(application)
     }
+
+    /**
+     * Merge the jqueryui config w/ the application config.  Allow app config to override.
+     * Code is taken from Spring-Security-Core  Files:
+     *  SpringSecurityUtils.java
+     *  ReflectionUtils.java
+     *  DefaultSecurityConfig.java
+     *
+     * @param app
+     */
+    private void mergeConfig(GrailsApplication app) {
+
+        ConfigObject currentConfig = app.config.grails.jqueryui
+
+        ConfigSlurper slurper = new ConfigSlurper(Environment.getCurrent().getName());
+        ConfigObject secondaryConfig = slurper.parse(app.classLoader.loadClass("JqueryuiWidgetConfig"))
+
+
+        ConfigObject config = new ConfigObject();
+        config.putAll(secondaryConfig.jqueryui.merge(currentConfig))
+
+        app.config.grails.jqueryui = config;
+    }
+
 
     def doWithDynamicMethods = { ctx ->
         // TODO Implement registering dynamic methods to classes (optional)
@@ -44,7 +71,6 @@ Brief description of the plugin.
     }
 
     def onConfigChange = { event ->
-        // TODO Implement code that is executed when the project configuration changes.
-        // The event is the same as for 'onChange'.
+        this.mergeConfig(application)
     }
 }

@@ -1,5 +1,7 @@
 package grails.jqueryui.widget
 
+import org.codehaus.groovy.grails.commons.ConfigurationHolder
+
 class DialogTagLib {
 
     static namespace = "jqueryui"
@@ -8,13 +10,15 @@ class DialogTagLib {
 
     def jquiDialog = {attrs, body ->
 
+        String prefix = ConfigurationHolder.config.grails.jqueryui.prefixes.dialog
+        String jsNameSpace = ConfigurationHolder.config.grails.jqueryui.namespace
+
         //pull the config properties and set defaults
         def id = attrs.remove('id')
-        def namespace = attrs.remove('namespace') ?: 'grails.jqueryui.components'
         def config = attrs.remove('config') ?: [:]
 
         //set ids
-        def dialogID = "${namespace}.grailsJQUIDialog_${id}"
+        def dialogID = "${jsNameSpace}.${prefix}${id}"
 
         out << """
 

@@ -4,8 +4,8 @@
     <facet type="web" name="GrailsWeb">
       <configuration>
         <webroots>
-          <root url="file://$USER_HOME$/.grails/1.3.7/projects/jqueryui-widget-testApp/plugins/jquery-ui-1.8.11/web-app" relative="/" />
           <root url="file://$USER_HOME$/.grails/1.3.7/projects/jqueryui-widget-testApp/plugins/jquery-1.6.1.1/web-app" relative="/" />
+          <root url="file://$USER_HOME$/.grails/1.3.7/projects/jqueryui-widget-testApp/plugins/jquery-ui-1.8.11/web-app" relative="/" />
         </webroots>
         <sourceRoots />
       </configuration>
