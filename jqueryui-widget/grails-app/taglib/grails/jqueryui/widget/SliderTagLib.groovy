@@ -2,15 +2,15 @@ package grails.jqueryui.widget
 
 import org.codehaus.groovy.grails.commons.ConfigurationHolder
 
-class AccordionTagLib {
+class SliderTagLib {
 
     static namespace = "jqueryui"
 
     GrailsJQueryUIWidgetUtil util = GrailsJQueryUIWidgetUtil.getInstance();
 
-    def jquiAccordion = {attrs, body ->
+    def slider = { attrs, body ->
 
-        String prefix = ConfigurationHolder.config.grails.jqueryui.prefixes.accordion
+        String prefix = ConfigurationHolder.config.grails.jqueryui.prefixes.slider
         String jsNameSpace = ConfigurationHolder.config.grails.jqueryui.namespace
 
         //pull the config properties and set defaults
@@ -18,20 +18,16 @@ class AccordionTagLib {
         def config = attrs.remove('config') ?: [:]
 
         //set ids
-        def accordionID = "${jsNameSpace}.${prefix}${id}"
+        def sliderID = "${jsNameSpace}.${prefix}${id}"
 
         out << """
-
 <script type="text/javascript">
     \$(function() {
-        ${accordionID} = \$("#${id}").accordion(${util.toJSON(config)});
+        ${sliderID} = \$("#${id}").slider(${util.toJSON(config)});
     });
-
 </script>
         """
 
     }
+
 }
-
-
-
