@@ -10,6 +10,12 @@ OVERALL TASKS
 6. Static Namespace (Grails & Javascript)
 7. Document Methods
 
-
-// post - http://grails.1312388.n4.nabble.com/Reading-configuration-in-plugin-td2714411.html
-// post - http://grails.1312388.n4.nabble.com/plugin-oriented-architecture-configuration-td3405629.html
+Version 0.1.2
+- Namespace & Prefixes available in Javascript
+- Markup Rendering for Button, Slider, ProgressBar
+- Cleanup Javascript
+- Documentation on Grails Plugin Page
+    - Examples of common tags
+    - Config overrides
+    - Javascript details
+    - Override/Customize Example
