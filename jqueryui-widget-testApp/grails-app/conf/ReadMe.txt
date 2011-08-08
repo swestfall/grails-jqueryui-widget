@@ -10,7 +10,9 @@ OVERALL TASKS
 6. Static Namespace (Grails & Javascript)
 7. Document Methods
 
-Version 0.1.2
+
+
+Version 0.1.3
 - Namespace & Prefixes available in Javascript
 - Markup Rendering for Button, Slider, ProgressBar
 - Cleanup Javascript
@@ -19,3 +21,12 @@ Version 0.1.2
     - Config overrides
     - Javascript details
     - Override/Customize Example
+
+Version 0.1.2 - RELEASED
+- Remove JSON source - use JSON Jar
+
+Version 0.1.1 - RELEASED
+- Added Tag Support
+
+Version 0.1   - RELEASED
+- Initial Release
