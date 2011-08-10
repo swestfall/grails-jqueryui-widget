@@ -12,7 +12,7 @@ OVERALL TASKS
 
 
 
-Version 0.1.3
+Version 0.1.4
 - Namespace & Prefixes available in Javascript
 - Markup Rendering for Button, Slider, ProgressBar
 - Cleanup Javascript
@@ -21,6 +21,9 @@ Version 0.1.3
     - Config overrides
     - Javascript details
     - Override/Customize Example
+
+Version 0.1.3 - RELEASED
+- Fixed bug dealing with renderMarkup attribute
 
 Version 0.1.2 - RELEASED
 - Remove JSON source - use JSON Jar

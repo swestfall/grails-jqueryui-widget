@@ -15,7 +15,7 @@ class AutoCompleteTagLib {
 
         //pull the config properties and set defaults
         def id = attrs.remove('id')
-        def renderMarkup = attrs.remove('renderMarkup') ?: true
+        def renderMarkup = (attrs.get('renderMarkup') != null) ? attrs.remove('renderMarkup') : true
         def config = attrs.remove('config') ?: [:]
 
         //set ids
