@@ -39,19 +39,10 @@
                     </div>
                 </div>
 
-                <jqueryui:tab
+                <jqueryui:jquiTab
                         id="tabs"/>
 
             </div>
-
-
-            %{--<div class="exampleContainer">--}%
-            %{--<h3>Tag Creates Markup</h3>--}%
-            %{--<label for="date2">Date:</label>--}%
-            %{--<jqueryui:jquiDatePicker--}%
-            %{--id="date2"--}%
-            %{--namespace="grails.jqueryui.components"/>--}%
-            %{--</div>--}%
 
         </div>
     </body>

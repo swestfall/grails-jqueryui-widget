@@ -21,15 +21,9 @@
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$/../jqueryui-widget">
-      <sourceFolder url="file://$MODULE_DIR$/../jqueryui-widget/src/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../jqueryui-widget/grails-app/utils" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../jqueryui-widget/src/groovy" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../jqueryui-widget/grails-app/controllers" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../jqueryui-widget/grails-app/domain" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../jqueryui-widget/grails-app/services" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../jqueryui-widget/grails-app/taglib" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../jqueryui-widget/test/unit" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/../jqueryui-widget/test/integration" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/../jqueryui-widget/target/classes" />
       <excludeFolder url="file://$MODULE_DIR$/../jqueryui-widget/target/test-classes" />
       <excludeFolder url="file://$MODULE_DIR$/../jqueryui-widget/web-app/plugins" />

@@ -21,12 +21,10 @@ class AccordionTagLib {
         def accordionID = "${jsNameSpace}.${prefix}${id}"
 
         out << """
-
 <script type="text/javascript">
     \$(function() {
         ${accordionID} = \$("#${id}").accordion(${util.toJSON(config)});
     });
-
 </script>
         """
 

@@ -26,19 +26,11 @@
                     <input type="radio" id="radio3" name="radio"/><label for="radio3">Choice 3</label>
                 </div>
 
-                <jqueryui:buttonSet
+                <jqueryui:jquiButtonSet
                         id="radio"/>
 
             </div>
 
-
-            %{--<div class="exampleContainer">--}%
-            %{--<h3>Tag Creates Markup</h3>--}%
-            %{--<label for="date2">Date:</label>--}%
-            %{--<jqueryui:jquiDatePicker--}%
-            %{--id="date2"--}%
-            %{--namespace="grails.jqueryui.components"/>--}%
-            %{--</div>--}%
 
         </div>
     </body>

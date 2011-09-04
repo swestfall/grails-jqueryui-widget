@@ -8,7 +8,7 @@ class SliderTagLib {
 
     GrailsJQueryUIWidgetUtil util = GrailsJQueryUIWidgetUtil.getInstance();
 
-    def slider = { attrs, body ->
+    def jquiSlider = { attrs, body ->
 
         String prefix = ConfigurationHolder.config.grails.jqueryui.prefixes.slider
         String jsNameSpace = ConfigurationHolder.config.grails.jqueryui.namespace

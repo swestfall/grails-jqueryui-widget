@@ -8,7 +8,7 @@ class ProgressBarTagLib {
 
     GrailsJQueryUIWidgetUtil util = GrailsJQueryUIWidgetUtil.getInstance();
 
-    def progressBar = { attrs, body ->
+    def jquiProgressBar = { attrs, body ->
 
         String prefix = ConfigurationHolder.config.grails.jqueryui.prefixes.progressBar
         String jsNameSpace = ConfigurationHolder.config.grails.jqueryui.namespace

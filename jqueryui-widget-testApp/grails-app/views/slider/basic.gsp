@@ -22,7 +22,7 @@
                 <h3>Pre-Existing Markup</h3>
                 <div id="slider"></div>
 
-                <jqueryui:slider
+                <jqueryui:jquiSlider
                         id="slider" />
 
             </div>

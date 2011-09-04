@@ -22,7 +22,7 @@
                 <h3>Pre-Existing Markup</h3>
                 <div id="progressBar"></div>
 
-                <jqueryui:progressBar
+                <jqueryui:jquiProgressBar
                         id="progressBar"
                         config="${[
                                 value: 37

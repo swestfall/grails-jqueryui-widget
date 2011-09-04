@@ -13,6 +13,11 @@ grails.jqueryui.formatters = {};
 /* contains reusable event handlers */
 grails.jqueryui.events = {};
 
+/* placeholders for configurable namespace and prefixes */
+/* content is filled out UtilTagLib */
+grails.jqueryui.namespace = "";
+grails.jqueryui.prefixes = {};
+
 /* contains reusable utility methods */
 grails.jqueryui.util = {
     applyConfig: function(oObject, oConfig) {

@@ -28,13 +28,11 @@ class AutoCompleteTagLib {
         }
 
         out << """
-
 ${markup}
 <script type="text/javascript">
     \$(function() {
         ${autoCompleteID} = \$("#${id}").autocomplete(${util.toJSON(config)});
     });
-
 </script>
         """
 

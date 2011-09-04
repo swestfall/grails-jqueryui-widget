@@ -8,7 +8,7 @@ class TabTagLib {
 
     GrailsJQueryUIWidgetUtil util = GrailsJQueryUIWidgetUtil.getInstance();
 
-    def tab = { attrs, body ->
+    def jquiTab = { attrs, body ->
 
         String prefix = ConfigurationHolder.config.grails.jqueryui.prefixes.tab
         String jsNameSpace = ConfigurationHolder.config.grails.jqueryui.namespace

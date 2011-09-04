@@ -28,13 +28,11 @@ class DatePickerTagLib {
         }
 
         out << """
-
 ${markup}
 <script type="text/javascript">
     \$(function() {
         ${datePickerID} = \$("#${id}").datepicker(${util.toJSON(config)});
     });
-
 </script>
         """
 

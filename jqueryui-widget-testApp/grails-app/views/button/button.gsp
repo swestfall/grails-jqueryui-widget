@@ -26,28 +26,19 @@
                 <input id="input1" type="submit" value="submit">
                 <a href="#" id="href1">Anchor</a>
 
-                <jqueryui:button
+                <jqueryui:jquiButton
                         id="button1"/>
 
-                <jqueryui:button
+                <jqueryui:jquiButton
                         id="div1"/>
 
-                <jqueryui:button
+                <jqueryui:jquiButton
                         id="input1"/>
 
-                <jqueryui:button
+                <jqueryui:jquiButton
                         id="href1"/>
 
             </div>
-
-
-            %{--<div class="exampleContainer">--}%
-                %{--<h3>Tag Creates Markup</h3>--}%
-                %{--<label for="date2">Date:</label>--}%
-                %{--<jqueryui:jquiDatePicker--}%
-                        %{--id="date2"--}%
-                        %{--namespace="grails.jqueryui.components"/>--}%
-            %{--</div>--}%
 
         </div>
     </body>

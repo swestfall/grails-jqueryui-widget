@@ -28,22 +28,13 @@
                     <input type="checkbox" id="check3"/><label for="check3">U</label>
                 </div>
 
-                <jqueryui:button
+                <jqueryui:jquiButton
                         id="check"/>
 
-                <jqueryui:buttonSet
+                <jqueryui:jquiButtonSet
                         id="format" />
 
             </div>
-
-
-            %{--<div class="exampleContainer">--}%
-            %{--<h3>Tag Creates Markup</h3>--}%
-            %{--<label for="date2">Date:</label>--}%
-            %{--<jqueryui:jquiDatePicker--}%
-            %{--id="date2"--}%
-            %{--namespace="grails.jqueryui.components"/>--}%
-            %{--</div>--}%
 
         </div>
     </body>

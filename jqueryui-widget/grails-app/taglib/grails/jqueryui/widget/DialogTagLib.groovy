@@ -21,12 +21,10 @@ class DialogTagLib {
         def dialogID = "${jsNameSpace}.${prefix}${id}"
 
         out << """
-
 <script type="text/javascript">
     \$(function() {
         ${dialogID} = \$("#${id}").dialog(${util.toJSON(config)});
     });
-
 </script>
         """
 

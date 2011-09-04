@@ -8,7 +8,7 @@ class ButtonTagLib {
 
     GrailsJQueryUIWidgetUtil util = GrailsJQueryUIWidgetUtil.getInstance();
 
-    def button = { attrs, body ->
+    def jquiButton = { attrs, body ->
 
         String prefix = ConfigurationHolder.config.grails.jqueryui.prefixes.button
         String jsNameSpace = ConfigurationHolder.config.grails.jqueryui.namespace
@@ -30,7 +30,7 @@ class ButtonTagLib {
 
     }
 
-    def buttonSet = { attrs, body ->
+    def jquiButtonSet = { attrs, body ->
 
         String prefix = ConfigurationHolder.config.grails.jqueryui.prefixes.buttonSet
         String jsNameSpace = ConfigurationHolder.config.grails.jqueryui.namespace

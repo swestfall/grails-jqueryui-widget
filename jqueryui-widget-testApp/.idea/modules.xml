@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/jqueryui-widget-testApp.iml" filepath="$PROJECT_DIR$/jqueryui-widget-testApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jqueryui-widget-testApp-grailsPlugins.iml" filepath="$PROJECT_DIR$/jqueryui-widget-testApp-grailsPlugins.iml" />
       <module fileurl="file://$PROJECT_DIR$/jqueryuiWidget-inplacePlugin.iml" filepath="$PROJECT_DIR$/jqueryuiWidget-inplacePlugin.iml" />
     </modules>
   </component>
