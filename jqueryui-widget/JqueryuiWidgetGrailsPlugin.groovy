@@ -3,7 +3,7 @@ import org.codehaus.groovy.grails.commons.GrailsApplication
 
 class JqueryuiWidgetGrailsPlugin {
     // the plugin version
-    def version = "0.1.3"
+    def version = "0.1.4"
     // the version or versions of Grails the plugin is designed for
     def grailsVersion = "1.3.7 > *"
     // the other plugins this plugin depends on
@@ -18,7 +18,7 @@ class JqueryuiWidgetGrailsPlugin {
     def authorEmail = "stephen.westfall@gmail.com"
     def title = "Grails Plugin for jQuery UI Widgets"
     def description = '''\\
-This plugin allows for the creation of YUI Widgets via TagLibs.
+This plugin allows for the creation of jQuery-UI Widgets via TagLibs.
 '''
 
     // URL to the plugin's documentation
