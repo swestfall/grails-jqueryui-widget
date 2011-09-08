@@ -18,7 +18,10 @@ Version 0.1.5
 - FormDatePicker
 - Documentation on Grails Plugin Page and/or blog post
 
-Version 0.1.4
+Version 0.1.4.1
+- Fixed Collision w/ custom JSON Library
+
+Version 0.1.4 - RELEASED
 - Namespace & Prefixes available in Javascript (Done)
 - Unit Tests (DONE)
 
