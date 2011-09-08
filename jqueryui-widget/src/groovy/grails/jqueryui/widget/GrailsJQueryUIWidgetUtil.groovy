@@ -19,9 +19,9 @@ public class GrailsJQueryUIWidgetUtil {
 
     public String toJSON(Object obj) {
         if (obj instanceof Map) {
-            return new org.json.JSONObject(((Map) obj)).toString();
+            return new org.json.JSONObject2(((Map) obj)).toString();
         } else if (obj instanceof ArrayList) {
-            return new org.json.JSONArray(((Collection) obj)).toString();
+            return new org.json.JSONArray2(((Collection) obj)).toString();
         }
     }
     

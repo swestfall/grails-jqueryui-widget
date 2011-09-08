@@ -41,7 +41,6 @@
         <jarDirectory url="file://$MODULE_DIR$/../jqueryui-widget/lib" recursive="false" />
       </library>
     </orderEntry>
-    <orderEntry type="module" module-name="jqueryui-widget-testApp-grailsPlugins" />
   </component>
 </module>
 
